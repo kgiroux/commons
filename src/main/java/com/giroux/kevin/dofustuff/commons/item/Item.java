@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Item {
 
+	public  String id;
     private String name;
     private String description;
     private int level;
@@ -91,5 +92,13 @@ public class Item {
 
 	public void setEffects(List<Effect> effects) {
 		this.effects = effects;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 }
