@@ -1,6 +1,8 @@
 package com.giroux.kevin.dofustuff.commons.item;
 
-public class Property {
+import java.io.Serializable;
+
+public class Property implements Serializable {
 
     private int id;
     private int paCost;

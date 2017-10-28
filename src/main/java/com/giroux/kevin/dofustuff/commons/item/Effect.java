@@ -1,6 +1,8 @@
 package com.giroux.kevin.dofustuff.commons.item;
 
-public class Effect {
+import java.io.Serializable;
+
+public class Effect implements Serializable {
 
     private int id;
     private String internalId;

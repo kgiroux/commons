@@ -1,8 +1,9 @@
 package com.giroux.kevin.dofustuff.commons.item;
 
-public class ForgeMagie {
+import java.io.Serializable;
 
-
+public class ForgeMagie implements Serializable {
+    
     private int id;
 
     private int value;

@@ -1,6 +1,8 @@
 package com.giroux.kevin.dofustuff.commons.item;
 
-public enum ItemCategory {
+import java.io.Serializable;
+
+public enum ItemCategory implements Serializable {
 	UNKNOWN("unknown"),
     CHAPEAU("chapeau"),
 	DOFUS("dofus"),

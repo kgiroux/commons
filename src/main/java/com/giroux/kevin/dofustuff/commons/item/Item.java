@@ -1,8 +1,9 @@
 package com.giroux.kevin.dofustuff.commons.item;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Item {
+public class Item implements Serializable{
 
 	public  String id;
     private String name;
