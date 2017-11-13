@@ -33,13 +33,18 @@ public enum ItemCategory implements Serializable {
     ItemCategory(String category){
        this.category = category;
     }
-    
-    public static ItemCategory findByCategory(final String category) {
-    	for(ItemCategory cat : values()){
-            if( cat.category.equals(category)){
-                return cat;
-            }
-        }
+
+	public String getCategory() {
+		return category;
+	}
+
+	public static ItemCategory findByCategory(final String category) {
+    	String toCompare = category.toLowerCase();
+    	for(ItemCategory cat : values()) {
+			if (cat.getCategory().equals(toCompare)) {
+				return cat;
+			}
+		}
 		return UNKNOWN;
     }
     
