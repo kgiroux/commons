@@ -10,9 +10,21 @@
 
     <repositories>
         <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
+            <id>nexus-internal</id>
+            <url>https://nexus.nexus-factory.ovh/repository/maven-public/</url>
         </repository>
     </repositories>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>https://nexus.nexus-factory.ovh/repository/maven-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <url>https://nexus.nexus-factory.ovh/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
+
 
 </project>
