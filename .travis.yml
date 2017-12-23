@@ -1,3 +1,6 @@
 language: java
 script: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-cache: $HOME/.cache/java
+cache: 
+  directories: 
+    - $HOME/.cache/java
+    - $HOME/.m2
