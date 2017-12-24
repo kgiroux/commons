@@ -6,7 +6,7 @@ public class Effect implements Serializable {
 
     private int id;
     private String internalId;
-    private  String name;
+    private String name;
     private String type;
     private int min;
     private int max;
