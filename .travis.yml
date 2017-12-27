@@ -1,7 +1,9 @@
 language: java
 env: 
   - CACHE_NAME = COMMONS
-script: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V deploy -s settings.xml
+script:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V deploy -s settings.xml
+  - mvn sonar:sonar -Dsonar.host.url=http://51.254.133.167:9000 -Dsonar.login=4c2eb3431731550b5ca8ab2610af95f1debe8baf
 
 cache: 
   directories: 
