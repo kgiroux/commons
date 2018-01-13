@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Item implements Serializable{
 
-	public  String id;
+	private String id;
     private String name;
     private String description;
     private int level;
