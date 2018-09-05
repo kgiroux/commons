@@ -1,7 +1,9 @@
 package com.giroux.kevin.dofustuff.commons.security;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
+/**
+ * Class Token
+ */
 public class RefreshToken {
     @JsonProperty("token")
     private String token;
