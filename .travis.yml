@@ -2,7 +2,7 @@ language: java
 env: 
   - CACHE_NAME = COMMONS
 script:
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -s settings.xml
+- mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 cache: 
   directories: 
     - $HOME/.cache/java
